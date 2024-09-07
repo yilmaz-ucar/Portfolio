@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.site-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('images/profile.webp');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="site-sidebar site-hide-medium site-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="site-sidebar site-black site-animate-right site-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="site-button site-black site-xxxlarge site-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="site-bar-block site-center">
+    <a href="#" class="site-bar-item site-button site-text-grey site-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="site-bar-item site-button site-text-grey site-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="site-bar-item site-button site-text-grey site-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="site-main site-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="site-button site-top site-white site-xxlarge site-text-grey site-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="site-container site-center" style="padding:128px 16px" id="home">
+    <h1 class="site-jumbo"><b>Yilmaz Ucar</b></h1>
+    <p>Jr. Web developer</p>
+    <img src="/images/profile.webp" class="site-image site-hide-large site-hide-small site-round" style="display:block;width:60%;margin:auto;">
+    <img src="/images/profile.webp" class="site-image site-hide-large site-hide-medium site-round" width="1000" height="1333">
+    <button class="site-button site-light-grey site-padding-large site-margin-top">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </header>
+
+
+
+  <!-- About Section -->
+  <div class="site-content site-justify site-text-grey site-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="site-opacity">
+    <p>Hello, I am a jr web developer. My portfolio will expand as I learn and develop. I will share them on this page.
+    </p>
+    <h3 class="site-padding-16">My Skills</h3>
+    <p class="site-wide">HTML and CSS</p>
+    <div class="site-light-grey">
+      <div class="site-container site-center site-padding-small site-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="site-wide">JavaScript</p>
+    <div class="site-light-grey">
+      <div class="site-container site-center site-padding-small site-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="site-wide">C#</p>
+    <div class="site-light-grey">
+      <div class="site-container site-center site-padding-small site-dark-grey" style="width:80%">80%</div>
+    </div><br>
+
+    
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="site-padding-32 site-content site-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="site-opacity">
+
+    <div class="site-section">
+      <p><i class="fa fa-map-marker fa-fw site-xxlarge site-margin-right"></i> <a href="https://github.com/yilmaz-ucar" target="_blank">github.com/yilmaz-ucar</a></p>
+      <p><i class="fa fa-envelope fa-fw site-xxlarge site-margin-right"> </i> Email: Yilmaz.ucar[At]my-aolcc.com</p>
+    </div>
+    
+    <!-- Image of location/map -->
+   
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="" target="_blank">
+      <p><input class="site-input site-padding-16 site-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="site-input site-padding-16 site-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="site-input site-padding-16 site-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="site-input site-padding-16 site-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="site-button site-light-grey site-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="site-container site-padding-64 site-light-grey site-center site-opacity site-xlarge" style="margin:-24px">
+
+    <i class="fa fa-linkedin site-hover-opacity"></i>
+
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
